@@ -97,7 +97,7 @@ function checkGuess() {
 
   for (let i = 0; i < 5; i++) {
     let box = row.children[i];
-    let delay = 250 * i;
+    let delay = 500 * i;
     setTimeout(() => {
       //flip box
       animateCSS(box, "flipInX");
@@ -144,7 +144,7 @@ const animateCSS = (element, animation, prefix = "animate__") =>
     const animationName = `${prefix}${animation}`;
     // const node = document.querySelector(element);
     const node = element;
-    node.style.setProperty("--animate-duration", "0.3s");
+    node.style.setProperty("--animate-duration", "0.8s");
 
     node.classList.add(`${prefix}animated`, animationName);
 
